@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TICKET</title>
+    <style>
+        body {
+			background-image: url("image4.jpg");
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+             height: 100vh;
+  			display: flex;
+  			justify-content: center;
+ 			 align-items: center;
+ 			 background-size: contain;
+ 			 background-repeat: round;
+        }
+        h2{
+			color: blue;
+			text-align: center;
+			 font-family: 'Georgia', serif;
+      font-size: 30px;
+      font-weight: bold;
+      font-style: italic;
+      line-height: 1.8;
+      letter-spacing: 1px;
+		}
+		p{
+			color: maroon;
+			 font-family: 'Georgia', serif;
+      font-size: 20px;
+      font-weight: bold;
+      font-style: italic;
+      line-height: 1.8;
+      letter-spacing: 1px;
+		}
+		#print{
+			position: absolute;
+   		 	top: 0;
+  		  	right: 0;
+    		margin: 30px;
+    		color: white;
+    		width: 100px;  /* Set the width of the button */
+    		height: 30px;  /* Set the height of the button */
+    		font-size: 16px;
+    		background-color: transparent;
+		}
+		#home{
+			position: absolute;
+   		 	top: 0;
+  		  	left: 0;
+    		margin: 30px;
+    		color: white;
+    		width: 100px;  
+    		height: 30px;  
+    		font-size: 16px;
+    		background-color: transparent;
+		}
+		
+        .confirmation {
+            background-color: rgba(255,255, 255, 0.5);
+            padding: 100px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <script>
+        function homepage() {
+            window.location.href = "HomePage.html";
+        }
+    </script>
+</head>
+<body>
+	<input onclick="homepage()" id="home" type="submit" value="Cancle" >
+    <div class="confirmation">
+		
+        <h2>BOOKING TICKET</h2>
+        <p><strong>Ticket No. :</strong> <span id="ticket"></span></p>
+        <p><strong>Consumer Name :</strong> <span id="name"></span></p>
+        <p><strong>Fling From:</strong> <span id="from"></span></p>
+        <p><strong>Fling To:<span id="to"></span></p>
+        <p><strong>Departure Date:</strong> <span id="departure-date"></span></p>
+        <p><strong>Return Date:</strong> <span id="return-date"></span></p>
+        <p><strong>Adults:</strong> <span id="Adults"></span></p>
+        <p><strong>Childern:</strong> <span id="Childern"></span></p>
+        <p><strong>Travel Class:</strong> <span id="Travel Class"></span></p>
+        <p><strong>Round:</strong> <span id="Round"></span></p>
+        <p><strong>Total Amount:</strong> <span id="amount"></span></p>
+    </div>
+    <script>
+        // Display form data on the confirmation page
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById('ticket').textContent = urlParams.get('ticket');
+        document.getElementById('name').textContent = urlParams.get('name');
+        document.getElementById('from').textContent = urlParams.get('from');
+        document.getElementById('to').textContent = urlParams.get('to');
+        document.getElementById('departure-date').textContent = urlParams.get('departure-date');
+        document.getElementById('return-date').textContent = urlParams.get('return-date') || 'N/A';
+        document.getElementById('Adults').textContent = urlParams.get('Adults');
+         document.getElementById('Childern').textContent = urlParams.get('Childern');
+          document.getElementById('Travel Class').textContent = urlParams.get('Travel Class');
+           document.getElementById('Round').textContent = urlParams.get('Round');
+           document.getElementById('amount').textContent = urlParams.get('amount');
+    </script>
+    <button id="print" onclick="window.print()">Print Ticket</button>
+</body>
+</html>

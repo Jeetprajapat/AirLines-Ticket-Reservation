@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" type="text/css" href="AirLogin.css" />
+  <style>
+	  #inform{
+		   text-align: center;
+		   font-family: 'Georgia', serif;
+      font-size: 30px;
+      font-weight: bold;
+      font-style: italic;
+      line-height: 1.8;
+      letter-spacing: 1px;
+	  }
+	  #buttonHome{
+		  width: 100px;  /* Set the width of the button */
+    height: 30px;
+	  }
+  </style>
+  <script>
+        function homepage() {
+            window.location.href = "HomePage.html";
+        }
+    </script>
+</head>
+<body>
+	<input onclick="homepage()" id="buttonHome" type="submit" value="Home" >
+  <div class="container"  style="background-color: rgba(255,255,255,0.4);">
+   
+    <div id="inform" class="title">Reservation Enquiry</div>
+    <hr>
+    <div class="content">
+     
+      <form action="mailto:k96jitendra@gmail.com" method="post">
+        <div class="user-details">
+          
+          <div class="input-box">
+            <span class="details">Flight Name</span>
+            <input type="text" placeholder="Flight Name" required>
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Flight Code</span>
+            <input type="number" placeholder="Code" required>
+          </div>
+          
+           <div class="input-box">
+            <span class="details">Class Name</span>
+            <input type="text" placeholder="Class Name" required>
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" placeholder="Email ID" required>
+          </div>
+        
+          <div class="input-box">
+            <span class="details">Source</span>
+            <input type="text" placeholder="Sourse" required>
+          </div>
+         
+          <div class="input-box">
+            <span class="details">Destination</span>
+            <input type="text" placeholder="Destination" required>
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Deaparture Date</span>
+            <input type="date" placeholder="Deaparture Time" required>
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Arrival Date</span>
+            <input type="date" placeholder="Arrival" required>
+          </div>
+        
+          </div>
+        
+        <div class="button-container">
+          <div class="button">
+            <input type="submit" value="Update">
+             <input type="reset" value="Cancle">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

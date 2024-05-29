@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Reservation Enquiry </title>
+<link rel="stylesheet" type="text/css" href="A_Rgistration.css" />
+<style>
+  	#buttonHome{
+  	position: absolute;
+    top: 0;
+    left: 0;
+    margin: 30px;
+    color: white;
+    width: 100px;  
+    height: 30px;  
+    font-size: 16px;
+    background-color: transparent;
+  		}
+  		table1 {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+  		body{
+  background-image: url("image2.jpg");
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+  background-repeat: round;
+}
+        table,
+        td {
+            border: 1px solid lemonchiffon;
+            color: blue;
+            text-align: center;
+        }
+        th{
+			color: mediumslateblue;
+			background-color: aqua;
+			text-align: center;
+		}
+        h1{
+			color:darkblue;
+			text-align: center;
+			position: absolute;
+            top: 60px;
+             font-family: 'Georgia', serif;
+			  font-size: 30px;
+     	     font-weight: bold;
+		}
+		 h2{
+			 right: 350px;
+			color:darkblue;
+			text-align: center;
+			position: absolute;
+            top: 150px;
+             font-family: 'Georgia', serif;
+			  font-size: 20px;
+     	     font-weight: bold;
+		}
+			 h3{
+				 left: 280px;
+			color:darkblue;
+			text-align: center;
+			position: absolute;
+            top: 150px;
+             font-family: 'Georgia', serif;
+			  font-size: 20px;
+     	     font-weight: bold;
+		}
+
+		select{
+			color: blue;
+			background-color: mediumslateblue;
+		}
+    </style>
+    <script>
+        function homepage() {
+            window.location.href = "HomePage.html";
+        }
+    </script>
+</head>
+<body>
+	<input onclick="homepage()" id="buttonHome" type="submit" value="Home" >
+<h1>Flight Detail List:</h1>
+<div class="table1"><h3>Domestic Flight</h3>
+  <table style="width:80%">
+        <tr>
+            <th>#</th>
+            <th>Arrival</th>
+			<th>Departure</th>
+			<th>Destination</th>
+			<th>Source</th>
+			<th>Airlines</th>
+			<th>Prise</th>
+			<th>Action</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>01/01/2024 15:30</td>
+            <td>02/01/2024 12:30</td>
+            <td>Delhi</td>
+            <td>Hedrabad</td>
+            <td>Spark Airlines</td>
+            <th>475</th>
+            <td> <select name="class">
+			<option>....</option>
+			<option>Economy</option>
+			<option>Business</option>
+                   </select></td>
+        </tr>
+         <tr>
+			<td>2.</td>
+            <td>03/01/2024 13:10</td>
+            <td>04/01/2024 11:20</td>
+            <td>Delhi</td>
+            <td>Aliarhg</td>
+            <td>Spark Airlines</td>
+            <th>947</th>
+            <td> <select name="class">
+			<option>....</option>
+			<option>Economy</option>
+			<option>Business</option>
+                   </select></td>
+        </tr>
+         <tr>
+			 <td>3.</td>
+            <td>24/02/2024 9:20</td>
+            <td>05/03/2024 12:30</td>
+            <td>Pune</td>
+            <td>Gujrat</td>
+            <td>Indigo Airlines</td>
+            <th>850</th>
+            <td> <select name="class">
+			<option>....</option>
+			<option>Economy</option>
+			<option>Business</option>
+                   </select></td>
+        </tr>
+         <tr>
+			<td>4.</td>
+            <td>02/02/2024 2:30</td>
+            <td>05/02/2024 1:30</td>
+            <td>Lakhanu</td>
+            <td>Delhi</td>
+            <td>Indigo Airlines</td>
+            <th>834</th>
+            <td> <select name="class">
+			<option>....</option>
+			<option>Economy</option>
+			<option>Business</option>
+                   </select></td>
+        </tr> 
+        <tr>
+			<td>5.</td>
+            <td>03/04/2024 10:00</td>
+            <td>06/04/2024 11:30</td>
+            <td>Mharasta</td>
+            <td>Kolkata</td>
+            <td>Spark Airlines</td>
+            <th>970</th>
+            <td> <select name="class">
+			<option>....</option>
+			<option>Economy</option>
+			<option>Business</option>
+                   </select></td>
+        </tr>
+        <tr>
+			<td>6.</td>
+            <td>25/08/2024 15:30</td>
+            <td>02/01/2024 11:40</td>
+            <td>Tamilnadu</td>
+            <td>Delhi</td>
+            <td>Spark Airlines</td>
+            <th>595</th>
+            <td> <select name="class">
+			<option>....</option>
+			<option>Economy</option>
+			<option>Business</option>
+                   </select></td>
+        </tr>
+        <tr>
+			<td>7.</td>
+            <td>30/012/2024 20:25</td>
+            <td>02/01/2024 24:50</td>
+            <td>Gujrat</td>
+            <td>Delhi</td>
+            <td>Indigo Airlines</td>
+            <th>1050</th>
+            <td> <select name="class">
+			<option>....</option>
+			<option>Economy</option>
+			<option>Business</option>
+                   </select></td>
+        </tr>
+    </table></div>
+    <div class="table1"><h2>International Flight</h2>
+  <table style="width:80%">
+        <tr>
+            <th>#</th>
+            <th>Arrival</th>
+			<th>Departure</th>
+			<th>Destination</th>
+			<th>Source</th>
+			<th>Airlines</th>
+			<th>Prise</th>
+			<th>Action</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>01/01/2024 15:30</td>
+            <td>02/01/2024 12:30</td>
+            <td>Canada</td>
+            <td>India</td>
+            <td>Spark Airlines</td>
+            <th>3475</th>
+            <td> <select name="class">
+			<option>....</option>
+			<option>Economy</option>
+			<option>Business</option>
+                   </select></td>
+        </tr>
+         <tr>
+			<td>2.</td>
+            <td>03/01/2024 13:10</td>
+            <td>04/01/2024 11:20</td>
+            <td>USA</td>
+            <td>India</td>
+            <td>Spark Airlines</td>
+            <th>2475</th>
+            <td> <select name="class">
+			<option>....</option>
+			<option>Economy</option>
+			<option>Business</option>
+                   </select></td>
+        </tr>
+         <tr>
+			 <td>3.</td>
+            <td>24/02/2024 9:20</td>
+            <td>05/03/2024 12:30</td>
+            <td>UK</td>
+            <td>India</td>
+            <td>Indigo Airlines</td>
+            <th>8500</th>
+            <td> <select name="class">
+			<option>....</option>
+			<option>Economy</option>
+			<option>Business</option>
+                   </select></td>
+        </tr>
+         <tr>
+			<td>4.</td>
+            <td>02/02/2024 2:30</td>
+            <td>05/02/2024 1:30</td>
+            <td>Frnsh</td>
+            <td>India</td>
+            <td>Indigo Airlines</td>
+            <th>5434</th>
+            <td> <select name="class">
+			<option>....</option>
+			<option>Economy</option>
+			<option>Business</option>
+                   </select></td>
+        </tr> 
+        <tr>
+			<td>5.</td>
+            <td>03/04/2024 10:00</td>
+            <td>06/04/2024 11:30</td>
+            <td>China</td>
+            <td>India</td>
+            <td>Spark Airlines</td>
+            <th>4070</th>
+            <td> <select name="class">
+			<option>....</option>
+			<option>Economy</option>
+			<option>Business</option>
+                   </select></td>
+        </tr>
+        <tr>
+			<td>6.</td>
+            <td>25/08/2024 15:30</td>
+            <td>02/01/2024 11:40</td>
+            <td>Thilend</td>
+            <td>India</td>
+            <td>Spark Airlines</td>
+            <th>5495</th>
+            <td> <select name="class">
+			<option>....</option>
+			<option>Economy</option>
+			<option>Business</option>
+                   </select></td>
+        </tr>
+        <tr>
+			<td>7.</td>
+            <td>30/012/2024 20:25</td>
+            <td>02/01/2024 24:50</td>
+            <td>Sauth Africa</td>
+            <td>India</td>
+            <td>Indigo Airlines</td>
+            <th>2650</th>
+            <td> <select name="class">
+			<option>....</option>
+			<option>Economy</option>
+			<option>Business</option>
+                   </select></td>
+        </tr>
+        
+    </table>
+    </div>
+</body>
+</html>

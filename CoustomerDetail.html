@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" type="text/css" href="CoustomerDetail.css" />
+  <style>
+  		#buttonHome{
+  		position: absolute;
+    top: 0;
+    left: 0;
+    margin: 30px;
+    color: white;
+    width: 100px;  /* Set the width of the button */
+    height: 30px;  /* Set the height of the button */
+    font-size: 16px;
+    background-color: transparent;
+  		}
+  		#tite{
+			  font-family: 'Georgia', serif;
+			  font-size: 30px;
+     	     font-weight: bold;
+		  }
+    </style>
+     <script>
+        function homepage() {
+            window.location.href = "HomePage.html";
+        }
+    </script>
+</head>
+<body>
+	<input onclick="homepage()" id="buttonHome" type="submit" value="Home" >
+  <div class="container"  style="background-color: rgba(255,255,255,0.4);">
+   
+    <div id="tite" class="title">Customer Details</div>
+    <hr>
+    <div class="content">
+     
+      <form action="#">
+        <div class="user-details">
+          
+          <div class="input-box">
+            <span class="details">Customar Name</span>
+            <input type="text" placeholder="Customar Name" required>
+          </div>
+          
+           <div class="input-box">
+            <span class="details">Father's Name</span>
+            <input type="text" placeholder="Father Name" required>
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Mother's Name</span>
+            <input type="text" placeholder="Mother Name" required>
+          </div>
+        
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Email ID" required>
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Passport No</span>
+            <input type="number" placeholder="Enter Passport No" required>
+          </div>
+         
+          <div class="input-box">
+            <span class="details">Address</span>
+            <input type="text" placeholder="Address" required>
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Contect No</span>
+            <input type="text" placeholder="Mobile No" maxlength="10" required>
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Date of birth</span>
+            <input type="date" name="dob" required>
+          </div>
+        </div>
+        
+        <div class="button-container">
+          <div class="button">
+            <input type="submit" value="Register">
+             <input type="reset" value="Cancle">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

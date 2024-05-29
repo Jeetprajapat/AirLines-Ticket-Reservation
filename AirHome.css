@@ -1,0 +1,152 @@
+* {
+     margin:0px;
+     padding:0px;
+}
+
+body {
+	 background-image: url("image1.jpg");
+     font-family: Roboto, sans-serif, arial;
+     font-size: 14px;
+     color: #242424;
+}
+body 
+{
+	background-image: url("image1.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    font-family:Arial; 
+    color:whitesmoke;
+    text-align: center;
+}
+#buttonHome{
+  		position: absolute;
+    top: 0;
+    left: 0;
+    margin: 30px;
+    color: white;
+    width: 150px;  /* Set the width of the button */
+    height: 50px;  /* Set the height of the button */
+    font-size: 16px;
+    background-color: transparent;
+  		}
+.contan {
+     color: blue;
+}
+nav {
+     width: 100%;
+     float: left;
+     background: blue;
+     padding:15px 0px;
+}
+ nav a {
+     color: #fff;
+     text-decoration: none;
+     font-size: 17px;
+     border-right: 1px solid #ffc3c3;
+     padding:2px 20px;
+}
+.about-us div {
+     width:70%;
+     margin-left:20px;
+     float:left;
+     line-height:35px;
+}
+h4{
+	font-size: 40px;
+	text-align: center;
+	color: white;
+	
+}
+h1{
+	font-size: 30px;
+	text-align: center;
+	color: red;
+	
+}
+middleContainer{
+	color: red;
+	text-align: left;
+	input-security: inherit;
+}
+
+ .container {
+     width: 1200px;
+     margin:0px auto;
+}
+.contan {
+     color: blue;                         
+}
+ .main-section {
+     width: 100%;
+     float: left;
+     padding:50px 0px 40px 0px;
+}
+ .heading {
+     font-size: 22px;
+     font-weight: 500;
+     border-bottom: 1px solid blue;
+     margin-bottom:25px;
+     color: blue;
+}
+.logo {
+     width:100%;
+}
+nav {
+     width: 100%;
+     float: left;
+     background: blue;
+     padding:15px 0px;
+}
+ nav a {
+     color: #fff;
+     text-decoration: none;
+     font-size: 17px;
+     border-right: 1px solid #ffc3c3;
+     padding:2px 20px;
+}
+.slider img {
+     width:100%;
+}
+.about-us img {
+     width:24%;
+     float:left;
+}
+ .about-us div {
+     width:70%;
+     margin-left:20px;
+     float:left;
+     line-height:35px;
+}
+.footer {
+     background-color:#1f2836;
+     padding:70px 0px;
+     width:100%;
+     float:left;
+}
+ .footer-sect {
+     width:33%;
+     float:left;
+}
+ .footer-sect h2 {
+     color:#fff;
+     margin-bottom: 20px;
+}
+ .footer-sect p {
+     color: #fff;
+     line-height: 22px;
+     padding:0px 30px 20px 0px;
+}
+ .footer-menu li {
+     width: 50%;
+     float: left;
+     margin-bottom: 10px;
+}
+ .footer-menu li a {
+     color:#fff;
+     text-decoration: none;
+}
+ .footer-contact li {
+     margin-bottom:15px;
+     list-style: none;
+     color: #fff;
+}
